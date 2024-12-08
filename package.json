@@ -1,0 +1,25 @@
+{
+  "name": "lit-ssr-css-modules",
+  "version": "1.0.0",
+  "description": "A demonstration repo of Lit+SSR with CSS Module scripts and Constructable Stylesheets",
+  "type": "module",
+  "main": "index.js",
+  "keywords": [
+    "Lit",
+    "SSR",
+    "Web Components",
+    "Constructable Stylesheets"
+  ],
+  "author": "Owen Buckley <owen@thegreenhouse.io>",
+  "scripts": {
+    "clean": "rimraf public",
+    "build": "pnpm run clean && node ."
+  },
+  "dependencies": {
+    "@lit-labs/ssr": "^3.2.1",
+    "lit": "^3.1.1"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
