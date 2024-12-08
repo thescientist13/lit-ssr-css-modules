@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
-import { render, html } from '@lit-labs/ssr';
+import { html } from 'lit';
+import { render } from '@lit-labs/ssr';
 import { collectResult } from '@lit-labs/ssr/lib/render-result.js';
 import './components/greeting/greeting.js';
 
