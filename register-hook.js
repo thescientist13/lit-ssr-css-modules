@@ -1,4 +1,3 @@
-// import @lit-labs/ssr-dom-shim/register-css-hook.js
 import '@lit-labs/ssr-dom-shim/register-css-hook.js';
 
 import fs from 'node:fs/promises';
