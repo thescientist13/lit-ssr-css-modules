@@ -13,8 +13,8 @@
   "author": "Owen Buckley <owen@thegreenhouse.io>",
   "scripts": {
     "clean": "rimraf public",
-    "build:loader": "pnpm run clean && node register-hook.js",
-    "build:register": "pnpm run clean && node --import @lit-labs/ssr-dom-shim/register node-loader.js"
+    "build:register": "pnpm run clean && node register-hook.js",
+    "build:import": "pnpm run clean && node --import @lit-labs/ssr-dom-shim/register node-loader.js"
   },
   "dependencies": {
     "@lit-labs/ssr": "^4.0.0",

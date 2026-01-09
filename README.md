@@ -15,7 +15,7 @@ The demo simply renders the standard Greeting component from the docs using Lit'
 ### Node Loader
 
 ```sh
-$ pnpm run build:loader
+$ pnpm run build:import
 ```
 
 ### Register Hook
