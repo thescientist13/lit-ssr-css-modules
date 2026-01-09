@@ -8,12 +8,20 @@ A demonstration repo of Lit+SSR with CSS Module scripts and Constructable Styles
 1. Assumes Node >= 22.x (`nvm use`)
 1. Assumes PNPM (`pnpm i`)
 
-## Demo
+## Demos
 
 The demo simply renders the standard Greeting component from the docs using Lit's SSR package and outputs its contents to _./public/index.html_.
 
+### Node Loader
+
 ```sh
-$ pnpm run build
+$ pnpm run build:import
+```
+
+### Register Hook
+
+```sh
+$ pnpm run build:register
 ```
 
 ## Known Issues
