@@ -1,0 +1,13 @@
+diff --git a/register-css-hook.js b/register-css-hook.js
+index 06ee72fac81fc434cbb4cafc3cfc00cf690b5699..cf0d38459d94714d687d1486e1dbd52923e770c8 100644
+--- a/register-css-hook.js
++++ b/register-css-hook.js
+@@ -9,7 +9,7 @@ try {
+         with: { type: 'css' },
+     })
+         .then(() => true)
+-        .catch(() => false);
++        .catch((error) => console.error('CAUGHT', { error }));
+     // Avoid breaking non-Node.js environments by checking for the
+     // existance of register on the node:module import.
+     const nodeModule = cssImportsSupported ? null : await import('node:module');

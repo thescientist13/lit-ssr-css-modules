@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@lit-labs/ssr-dom-shim': patches/@lit-labs__ssr-dom-shim.patch
