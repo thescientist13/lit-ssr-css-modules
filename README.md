@@ -26,7 +26,9 @@ $ pnpm run build:register
 
 ## Known Issues
 
-### `CSSStyleSheet` is not defined
+### ~~`CSSStyleSheet` is not defined~~
+
+> ✅ _Resolved as of [@lit-labs/ssr-dom-shim 1.6.0 release](https://github.com/lit/lit/releases/tag/%40lit-labs%2Fssr-dom-shim%401.6.0)_
 
 When trying to use a Constructable Stylesheet during SSR
 ```js
