@@ -11,6 +11,9 @@ importers:
       '@lit-labs/ssr':
         specifier: ^4.1.0
         version: 4.1.0
+      '@lit-labs/ssr-dom-shim':
+        specifier: ^1.6.0
+        version: 1.6.0
       lit:
         specifier: ^3.3.2
         version: 3.3.2
