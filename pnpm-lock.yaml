@@ -4,21 +4,13 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@lit-labs/ssr-dom-shim':
-    hash: d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461
-    path: patches/@lit-labs__ssr-dom-shim.patch
-
 importers:
 
   .:
     dependencies:
       '@lit-labs/ssr':
-        specifier: ^4.0.0
-        version: 4.0.0
-      '@lit-labs/ssr-dom-shim':
-        specifier: ^1.5.1
-        version: 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
+        specifier: ^4.1.0
+        version: 4.1.0
       lit:
         specifier: ^3.3.2
         version: 3.3.2
@@ -36,20 +28,17 @@ packages:
   '@lit-labs/ssr-client@1.1.7':
     resolution: {integrity: sha512-VvqhY/iif3FHrlhkzEPsuX/7h/NqnfxLwVf0p8ghNIlKegRyRqgeaJevZ57s/u/LiFyKgqksRP5n+LmNvpxN+A==}
 
-  '@lit-labs/ssr-dom-shim@1.5.1':
-    resolution: {integrity: sha512-Aou5UdlSpr5whQe8AA/bZG0jMj96CoJIWbGfZ91qieWu5AWUMKw8VR/pAkQkJYvBNhmCcWnZlyyk5oze8JIqYA==}
+  '@lit-labs/ssr-dom-shim@1.6.0':
+    resolution: {integrity: sha512-VHb0ALPMTlgKjM6yIxxoQNnpKyUKLD04VzeQdsiXkMqkvYlAHxq9glGLmgbb889/1GsohSOAjvQYoiBppXFqrQ==}
 
-  '@lit-labs/ssr@4.0.0':
-    resolution: {integrity: sha512-pODr+t7cZVIrCRLuSLuWAACDnztEk5IrRFwFsbxyAyWcP2XP8aKuUZdVM/biXqxvIyHyCKtNZ92Gdcr+pjA5BQ==}
+  '@lit-labs/ssr@4.1.0':
+    resolution: {integrity: sha512-m0zymVVlHB1ddJQ1lastsV8ROW3whFOiHJhVPQWd04MnGTkTlUUVLQctux1QlyD9BtLXNN6iASxv388vhgKMFg==}
     engines: {node: '>=13.9.0'}
     peerDependencies:
       '@types/node': '>=20.0.0 <25.0.0'
     peerDependenciesMeta:
       '@types/node':
         optional: true
-
-  '@lit/reactive-element@2.0.4':
-    resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
 
   '@lit/reactive-element@2.1.2':
     resolution: {integrity: sha512-pbCDiVMnne1lYUIaYNN5wrwQXDtHaYtg7YEFPeW+hws6U47WeFvISGUWekPGKWOP1ygrs0ef0o1VJMk1exos5A==}
@@ -145,14 +134,8 @@ packages:
     resolution: {integrity: sha512-bZsjR/iRjl1Nk1UkjGpAzLNfQtzuijhn2g+pbZb98HQ1Gk8vM9hfbxeMBP+M2/UUdwj0RqGG3mlvk2MsAqwvEw==}
     engines: {node: 20 || >=22}
 
-  lit-element@4.1.1:
-    resolution: {integrity: sha512-HO9Tkkh34QkTeUmEdNYhMT8hzLid7YlMlATSi1q4q17HE5d9mrrEHJ/o8O2D0cMi182zK1F3v7x0PWFjrhXFew==}
-
   lit-element@4.2.2:
     resolution: {integrity: sha512-aFKhNToWxoyhkNDmWZwEva2SlQia+jfG0fjIWV//YeTaWrVnOxD89dPKfigCUspXFmjzOEUQpOkejH5Ly6sG0w==}
-
-  lit-html@3.2.1:
-    resolution: {integrity: sha512-qI/3lziaPMSKsrwlxH/xMgikhQ0EGOX2ICU73Bi/YHFvz2j/yMCIrw4+puF2IpQ4+upd3EWbvnHM9+PnJn48YA==}
 
   lit-html@3.3.2:
     resolution: {integrity: sha512-Qy9hU88zcmaxBXcc10ZpdK7cOLXvXpRoBxERdtqV9QOrfpMZZ6pSYP91LhpPtap3sFMUiL7Tw2RImbe0Al2/kw==}
@@ -262,32 +245,28 @@ snapshots:
 
   '@lit-labs/ssr-client@1.1.7':
     dependencies:
-      '@lit/reactive-element': 2.0.4
+      '@lit/reactive-element': 2.1.2
       lit: 3.3.2
-      lit-html: 3.2.1
+      lit-html: 3.3.2
 
-  '@lit-labs/ssr-dom-shim@1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)': {}
+  '@lit-labs/ssr-dom-shim@1.6.0': {}
 
-  '@lit-labs/ssr@4.0.0':
+  '@lit-labs/ssr@4.1.0':
     dependencies:
       '@lit-labs/ssr-client': 1.1.7
-      '@lit-labs/ssr-dom-shim': 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
-      '@lit/reactive-element': 2.0.4
+      '@lit-labs/ssr-dom-shim': 1.6.0
+      '@lit/reactive-element': 2.1.2
       '@parse5/tools': 0.3.0
       enhanced-resolve: 5.17.1
       lit: 3.3.2
-      lit-element: 4.1.1
-      lit-html: 3.2.1
+      lit-element: 4.2.2
+      lit-html: 3.3.2
       node-fetch: 3.3.2
       parse5: 7.2.1
 
-  '@lit/reactive-element@2.0.4':
-    dependencies:
-      '@lit-labs/ssr-dom-shim': 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
-
   '@lit/reactive-element@2.1.2':
     dependencies:
-      '@lit-labs/ssr-dom-shim': 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
+      '@lit-labs/ssr-dom-shim': 1.6.0
 
   '@parse5/tools@0.3.0':
     dependencies:
@@ -371,21 +350,11 @@ snapshots:
     dependencies:
       '@isaacs/cliui': 8.0.2
 
-  lit-element@4.1.1:
-    dependencies:
-      '@lit-labs/ssr-dom-shim': 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
-      '@lit/reactive-element': 2.0.4
-      lit-html: 3.2.1
-
   lit-element@4.2.2:
     dependencies:
-      '@lit-labs/ssr-dom-shim': 1.5.1(patch_hash=d563231c0314a95d36245a81ba929aaf2e6d062235fbec7be4bdf60f0ce8e461)
+      '@lit-labs/ssr-dom-shim': 1.6.0
       '@lit/reactive-element': 2.1.2
       lit-html: 3.3.2
-
-  lit-html@3.2.1:
-    dependencies:
-      '@types/trusted-types': 2.0.7
 
   lit-html@3.3.2:
     dependencies:
