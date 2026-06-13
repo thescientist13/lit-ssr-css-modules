@@ -7,8 +7,7 @@ import './components/greeting/greeting.js';
 const OUTPUT_DIR = new URL('./public/', import.meta.url);
 const OUTPUT_FILE = new URL('./index.html', OUTPUT_DIR);
 
-// assumes OUTPUT DIR does not already exist
-await fs.mkdir(OUTPUT_DIR);
+await fs.mkdir(OUTPUT_DIR, { recursive: true });
 
 const greetingResult = html`
   <simple-greeting></simple-greeting>
