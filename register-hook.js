@@ -1,8 +1,8 @@
 import '@lit-labs/ssr-dom-shim/register-css-hook.js';
 
 import fs from 'node:fs/promises';
-import { html } from 'lit';
-import { render } from '@lit-labs/ssr';
+const { html } = await import('lit');
+const { render } = await import('@lit-labs/ssr');
 import { collectResult } from '@lit-labs/ssr/lib/render-result.js';
 await import('./components/greeting/greeting.js');
 
