@@ -49,11 +49,13 @@ ReferenceError: CSSStyleSheet is not defined
     at async file:///Users/owenbuckley/Workspace/github/lit-ssr-css-modules/register.js:5:1
 ```
 
-### ❓ Missing SSR Styles
+### ✅ Missing SSR Styles
+
+> _Resolved by applying [this change](https://github.com/thescientist13/lit-ssr-css-modules/pull/3)_
 
 When comparing the output of the two examples, the register hook version has no CSS in the generated `<style>` tag, while the import / loader version does.
 
-#### ✅ Loader
+#### Loader
 
 ```sh
 ➜  lit-ssr-css-modules git:(master) ✗ pnpm run build:import  
@@ -73,7 +75,7 @@ When comparing the output of the two examples, the register hook version has no 
 }
 ```
 
-#### ❌ Register
+#### Register
 
 ```sh
 ➜  lit-ssr-css-modules git:(master) ✗ pnpm run build:register
